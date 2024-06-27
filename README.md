@@ -16,6 +16,7 @@ Packages needed :
  - dune-client 1.7.3
  - pycryptodome 3.20.0
  - web3 6.16.0
+ - install cast from foundry and specify its location in decodeRawTx
 
  - requests 2.31.0
  - pandas 2.2.1
