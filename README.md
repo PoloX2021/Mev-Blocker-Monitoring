@@ -8,10 +8,19 @@ THe file main aggregates most of them. It uses these files:
  - MEVBlockerTx : to get all the transactions from MEVBlocker for a specific block. You wil need to add your DUNE_API_KEY to a .env file
  - refund to analyse if transactions from MEVBlocker received a refund
 
-
 table_header presents the header of the file table to show the structure of the database
 
 Finally df_experiment.py performs a few test on a db to implement to store the useful data for the monitoring.
+
+Packages needed :
+ - dune-client 1.7.3
+ - pycryptodome 3.20.0
+ - web3 6.16.0
+
+ - requests 2.31.0
+ - pandas 2.2.1
+ - python-dotenv 1.0.1
+ - requests 2.31.0
 
 In https://www.notion.so/cownation/MEV-Blocker-Monitoring-9426ee379caf4d50b4688b5790082a86 You will find more explanation of our The proposer builder separation is deployed and how mev blocker works.
 
