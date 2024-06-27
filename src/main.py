@@ -1,16 +1,13 @@
 from blocks import Block
 from bestBid import best_bid
-from time import time
 from mevBlockerTx import get_tx
 from refund import refund
-from time import time
 import logging
 logging.getLogger().setLevel(logging.ERROR)
 
 #Prepare the data : the blocks to work on
 #600 blocks ~ 180'
 for block_number in range(19511131, 19511164):
-    t = time()
     try:
         file_path = f"./{block_number}.txt"
         with open(file_path, "r") as file:
@@ -58,6 +55,5 @@ for block_number in range(19511131, 19511164):
     except Exception as e:
         print(e)
 
-    print(time()-t)
     
 
