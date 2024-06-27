@@ -6,7 +6,7 @@ import logging
 logging.getLogger().setLevel(logging.ERROR)
 
 #Prepare the data : the blocks to work on
-#600 blocks ~ 180'
+#600 blocks ~ 180' The delay is mainly due to the inefficient querying of the files
 for block_number in range(19511131, 19511164):
     try:
         file_path = f"./{block_number}.txt"
